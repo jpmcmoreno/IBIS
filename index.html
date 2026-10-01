@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibis de Colombia - Coquito e Ibis Escarlata</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50: '#f4f7f4', 100: '#e3ebe3', 200: '#c7d7c9', 300: '#b0c5b2', 600: '#52796f', 700: '#46655d', 800: '#354f52', 900: '#2f3e46' },
+                        coquito: { 50: '#f6f4ee', 100: '#ece6d6', 600: '#6b5a2e', 800: '#3d3420' },
+                        escarlata: { 50: '#fdf1ef', 100: '#fbdcd6', 600: '#c8381f', 800: '#8a2412' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], heading: ['Montserrat', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-sage-50 text-sage-900 font-sans antialiased">
+
+    <header class="py-12 sm:py-14 px-4 text-center max-w-4xl mx-auto">
+        <span class="px-3 py-1 bg-sage-200/60 text-sage-800 rounded-full text-xs font-semibold uppercase tracking-wider">Aves de nuestros humedales</span>
+        <h1 class="font-heading text-3xl sm:text-5xl font-extrabold text-sage-900 mt-3 mb-4 tracking-tight leading-tight">Conoce a los ibis</h1>
+        <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+            Dos aves de pico largo y curvo que viven en Colombia: el <strong class="text-coquito-600">ibis pico amarillo</strong> (coquito) y el <strong class="text-escarlata-600">ibis escarlata</strong>.
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 space-y-16 pb-16">
+
+        <!-- PANEL 1: EL PÁJARO -->
+        <section>
+            <div class="text-center mb-8">
+                <span class="text-sage-600 font-bold text-xs uppercase tracking-widest">Panel 1</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-sage-900 mt-1">El pájaro</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Coquito -->
+                <article class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden">
+                    <div class="bg-coquito-50 flex items-center justify-center py-6">
+                        <svg viewBox="0 0 220 170" class="w-64 h-48" role="img" aria-label="Ilustración del coquito o ibis pico amarillo">
+                            <ellipse cx="110" cy="160" rx="60" ry="5" fill="#000" opacity=".07"/>
+                            <path d="M40 92 L18 104 L46 100 Z" fill="#2f2a1c"/>
+                            <ellipse cx="85" cy="88" rx="50" ry="26" transform="rotate(-12 85 88)" fill="#3d3420"/>
+                            <path d="M55 82 Q85 62 120 74 Q100 92 62 96 Z" fill="#2f5a4a" opacity=".55"/>
+                            <path d="M120 78 Q138 70 140 50 Q141 36 150 33" stroke="#3d3420" stroke-width="13" fill="none" stroke-linecap="round"/>
+                            <circle cx="152" cy="34" r="11" fill="#3d3420"/>
+                            <path d="M150 30 Q160 26 166 34 Q160 40 152 40 Z" fill="#e8a39a"/>
+                            <circle cx="156" cy="32" r="2.2" fill="#1a1a1a"/>
+                            <path d="M164 35 Q190 46 202 82" stroke="#e9c46a" stroke-width="5" fill="none" stroke-linecap="round"/>
+                            <path d="M92 110 L86 156 M104 110 L110 156" stroke="#d98a7e" stroke-width="3.5" stroke-linecap="round"/>
+                            <path d="M78 157 L94 157 M102 157 L118 157" stroke="#d98a7e" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+                            <h3 class="font-heading font-bold text-xl text-coquito-800">Ibis pico amarillo (coquito)</h3>
+                            <span class="text-xs italic text-gray-500"><em>Phimosus infuscatus</em></span>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                            Es un ave café oscura con brillos verdes. Tiene la cara sin plumas, de color rosado, y un pico largo, curvo y claro. Es muy común en humedales, potreros y lagunas, incluso en Bogotá.
+                        </p>
+                        <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl">
+                            <p>• <strong>Dónde vive:</strong> Humedales, potreros inundados y arrozales, hasta 2.600 m de altura.</p>
+                            <p>• <strong>Qué come:</strong> Lombrices, insectos, caracoles y pequeños peces que saca del barro.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Escarlata -->
+                <article class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden">
+                    <div class="bg-escarlata-50 flex items-center justify-center py-6">
+                        <svg viewBox="0 0 220 170" class="w-64 h-48" role="img" aria-label="Ilustración del ibis escarlata">
+                            <ellipse cx="110" cy="160" rx="60" ry="5" fill="#000" opacity=".07"/>
+                            <path d="M40 92 L18 104 L46 100 Z" fill="#b8301a"/>
+                            <ellipse cx="85" cy="88" rx="50" ry="26" transform="rotate(-12 85 88)" fill="#e0452a"/>
+                            <path d="M40 96 Q34 90 44 84 L60 90 Z" fill="#1d1d1d"/>
+                            <path d="M58 80 Q88 64 122 74 Q100 90 64 94 Z" fill="#f05a3c" opacity=".6"/>
+                            <path d="M120 78 Q138 70 140 50 Q141 36 150 33" stroke="#e0452a" stroke-width="13" fill="none" stroke-linecap="round"/>
+                            <circle cx="152" cy="34" r="11" fill="#e0452a"/>
+                            <circle cx="156" cy="32" r="2.2" fill="#1a1a1a"/>
+                            <path d="M164 35 Q190 46 202 82" stroke="#5a2a22" stroke-width="5" fill="none" stroke-linecap="round"/>
+                            <path d="M92 110 L86 156 M104 110 L110 156" stroke="#e0452a" stroke-width="3.5" stroke-linecap="round"/>
+                            <path d="M78 157 L94 157 M102 157 L118 157" stroke="#e0452a" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between flex-wrap gap-2 mb-2">
+                            <h3 class="font-heading font-bold text-xl text-escarlata-800">Ibis escarlata (corocoro rojo)</h3>
+                            <span class="text-xs italic text-gray-500"><em>Eudocimus ruber</em></span>
+                        </div>
+                        <p class="text-sm text-gray-600 leading-relaxed mb-3">
+                            Es una de las aves más coloridas del mundo: todo su cuerpo es rojo intenso y solo las puntas de las alas son negras. Su color viene de los cangrejos y camarones que come.
+                        </p>
+                        <div class="space-y-1.5 text-xs text-sage-800 bg-sage-50 p-3 rounded-xl">
+                            <p>• <strong>Dónde vive:</strong> Manglares, costas y los Llanos Orientales de Colombia y Venezuela.</p>
+                            <p>• <strong>Qué come:</strong> Cangrejos, camarones, insectos y pequeños peces.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- PANEL 2: MÁS INFORMACIÓN -->
+        <section>
+            <div class="text-center mb-8">
+                <span class="text-sage-600 font-bold text-xs uppercase tracking-widest">Panel 2</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-sage-900 mt-1">Más información</h2>
+                <p class="text-gray-600 text-sm mt-2">Elige un ave para ver su tamaño, peso y cómo crece.</p>
+            </div>
+
+            <div class="flex justify-center gap-2 mb-6">
+                <button id="btn-coquito" onclick="mostrarAve('coquito')" class="px-5 py-2 rounded-full text-sm font-semibold transition-all bg-coquito-800 text-white">Coquito</button>
+                <button id="btn-escarlata" onclick="mostrarAve('escarlata')" class="px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white text-escarlata-800 border border-escarlata-100">Ibis escarlata</button>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-sage-200 shadow-sm p-6 sm:p-8">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8" id="datos"></div>
+                <h3 class="font-heading font-bold text-lg text-sage-900 mb-4"><i class="fa-solid fa-arrows-spin mr-2 text-sage-600"></i>Ciclo de maduración</h3>
+                <ol class="relative border-l-2 border-sage-200 ml-3 space-y-5" id="ciclo"></ol>
+                <p class="text-xs text-gray-500 mt-6" id="vida"></p>
+            </div>
+        </section>
+
+        <!-- PANEL 3: DIFERENCIAS -->
+        <section>
+            <div class="text-center mb-8">
+                <span class="text-sage-600 font-bold text-xs uppercase tracking-widest">Panel 3</span>
+                <h2 class="font-heading text-2xl sm:text-3xl font-bold text-sage-900 mt-1">Diferencias entre ambos</h2>
+            </div>
+
+            <div class="bg-white rounded-2xl border border-sage-200 shadow-sm overflow-hidden">
+                <div class="grid grid-cols-[1fr_1.4fr_1.4fr] text-sm">
+                    <div class="p-3 sm:p-4 bg-sage-100 font-semibold text-sage-800"></div>
+                    <div class="p-3 sm:p-4 bg-coquito-100 font-heading font-bold text-coquito-800">Coquito</div>
+                    <div class="p-3 sm:p-4 bg-escarlata-100 font-heading font-bold text-escarlata-800">Escarlata</div>
+
+                    <div class="p-3 sm:p-4 border-t border-sage-100 font-semibold text-sage-800"><i class="fa-solid fa-palette mr-1.5 text-sage-600"></i>Color</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Café oscuro con brillo verde</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Rojo intenso, puntas de las alas negras</div>
+
+                    <div class="p-3 sm:p-4 border-t border-sage-100 font-semibold text-sage-800"><i class="fa-solid fa-feather mr-1.5 text-sage-600"></i>Pico</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Claro, entre amarillento y rosado</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Oscuro</div>
+
+                    <div class="p-3 sm:p-4 border-t border-sage-100 font-semibold text-sage-800"><i class="fa-solid fa-ruler mr-1.5 text-sage-600"></i>Tamaño</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Un poco más pequeño (46–56 cm)</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Un poco más grande (55–63 cm)</div>
+
+                    <div class="p-3 sm:p-4 border-t border-sage-100 font-semibold text-sage-800"><i class="fa-solid fa-egg mr-1.5 text-sage-600"></i>De joven</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Todo negro, hasta el pico y las patas</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Café, gris y blanco; se vuelve rojo poco a poco</div>
+
+                    <div class="p-3 sm:p-4 border-t border-sage-100 font-semibold text-sage-800"><i class="fa-solid fa-location-dot mr-1.5 text-sage-600"></i>Dónde vive</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Humedales y potreros, también en ciudades de montaña como Bogotá</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Manglares, costas y llanos de tierra caliente</div>
+
+                    <div class="p-3 sm:p-4 border-t border-sage-100 font-semibold text-sage-800"><i class="fa-solid fa-shrimp mr-1.5 text-sage-600"></i>Comida</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Más lombrices e insectos</div>
+                    <div class="p-3 sm:p-4 border-t border-sage-100 text-gray-700">Más cangrejos y camarones (por eso es rojo)</div>
+                </div>
+            </div>
+
+            <div class="mt-5 bg-sage-100/70 border border-sage-200 rounded-2xl p-5">
+                <h3 class="font-heading font-bold text-sage-900 mb-2"><i class="fa-solid fa-handshake mr-2 text-sage-600"></i>En qué se parecen</h3>
+                <div class="space-y-1.5 text-sm text-sage-800">
+                    <p>• Los dos tienen un pico largo y curvo para buscar comida en el barro.</p>
+                    <p>• Los dos viven y vuelan en grupo, y hacen sus nidos en árboles cerca del agua.</p>
+                    <p>• Ninguno está en peligro hoy, pero los dos necesitan humedales limpios para vivir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PANEL 4: CUESTIONARIO -->
+        <section id="test" class="bg-sage-900 text-white rounded-3xl p-6 sm:p-10 shadow-xl max-w-3xl mx-auto">
+            <div class="text-center mb-8">
+                <span class="text-sage-200 text-xs uppercase font-semibold tracking-wider">Panel 4</span>
+                <h2 class="font-heading text-2xl font-bold mt-1">Cuestionario</h2>
+                <p class="text-sage-200 text-xs sm:text-sm mt-1">¿Qué tanto aprendiste sobre los ibis?</p>
+            </div>
+
+            <div id="quiz-body">
+                <div class="mb-6">
+                    <div class="flex items-center justify-between text-xs text-sage-200 mb-2 font-medium">
+                        <span id="question-number">Pregunta 1 de 4</span>
+                        <span id="score-counter">Puntos: 0</span>
+                    </div>
+                    <p id="question-text" class="text-base sm:text-lg font-medium leading-snug text-white">Cargando...</p>
+                </div>
+                <div id="options-container" class="space-y-3"></div>
+                <div id="explanation-box" class="hidden mt-6 p-4 rounded-xl text-xs sm:text-sm leading-relaxed border"></div>
+                <div class="mt-6 flex justify-end">
+                    <button id="next-btn" onclick="nextQuestion()" class="hidden px-5 py-2.5 bg-sage-600 hover:bg-sage-700 text-white text-xs sm:text-sm font-semibold rounded-xl transition-all">
+                        Siguiente pregunta <i class="fa-solid fa-arrow-right ml-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="quiz-end" class="hidden text-center py-6 space-y-4">
+                <div class="w-14 h-14 bg-sage-800 text-sage-200 rounded-full flex items-center justify-center text-2xl mx-auto">
+                    <i class="fa-solid fa-dove"></i>
+                </div>
+                <h3 id="end-title" class="font-heading text-2xl font-bold text-white"></h3>
+                <p id="end-desc" class="text-sm text-sage-200 max-w-md mx-auto leading-relaxed"></p>
+                <button onclick="resetQuiz()" class="px-5 py-2.5 bg-sage-600 hover:bg-sage-700 text-white text-sm font-semibold rounded-xl transition-all mt-2">Repetir test</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // ---------- Panel 2: datos de cada ave ----------
+        const aves = {
+            coquito: {
+                color: 'coquito',
+                datos: [
+                    { icono: 'fa-ruler-vertical', titulo: 'Tamaño', valor: '46 – 56 cm', nota: 'Del pico a la cola' },
+                    { icono: 'fa-weight-hanging', titulo: 'Peso', valor: '≈ 560 – 600 g', nota: 'Más o menos lo que pesa un balón de fútbol' },
+                    { icono: 'fa-arrows-left-right', titulo: 'Envergadura', valor: 'Sin dato oficial', nota: 'Cada ala mide unos 27 cm' }
+                ],
+                ciclo: [
+                    { t: 'Huevos', d: 'Pone de 2 a 4 huevos (a veces hasta 6) en un nido de ramas.' },
+                    { t: 'Incubación: 21 a 23 días', d: 'Papá y mamá se turnan para calentar los huevos.' },
+                    { t: 'Sale del nido: ≈ 3 semanas', d: 'Los pichones empiezan a caminar por las ramas cercanas.' },
+                    { t: 'Independiente: ≈ 4 a 6 semanas', d: 'Ya vuela y busca su propia comida en el barro.' },
+                    { t: 'Adulto: ≈ 2 años', d: 'Cambia el negro de joven por el café con brillo verde y empieza a tener crías.' }
+                ],
+                vida: 'Puede vivir hasta 20 años (récord registrado).'
+            },
+            escarlata: {
+                color: 'escarlata',
+                datos: [
+                    { icono: 'fa-ruler-vertical', titulo: 'Tamaño', valor: '55 – 63 cm', nota: 'Del pico a la cola' },
+                    { icono: 'fa-weight-hanging', titulo: 'Peso', valor: '≈ 0,6 – 1,4 kg', nota: 'Los machos pesan más que las hembras' },
+                    { icono: 'fa-arrows-left-right', titulo: 'Envergadura', valor: '≈ 52 – 56 cm', nota: 'Según el dato que más se publica' }
+                ],
+                ciclo: [
+                    { t: 'Huevos', d: 'Pone de 3 a 5 huevos verdosos con manchas cafés, en manglares.' },
+                    { t: 'Incubación: 19 a 23 días', d: 'Los dos padres cuidan el nido.' },
+                    { t: 'Vuela: ≈ 40 días', d: 'Todavía es café, gris y blanco: así se esconde mejor.' },
+                    { t: 'Independiente: ≈ 75 días', d: 'Busca solo su comida y empieza a comer cangrejos y camarones.' },
+                    { t: 'Rojo completo: ≈ 2 años', d: 'El rojo aparece primero en la espalda y se extiende por todo el cuerpo.' },
+                    { t: 'Adulto: entre 2 y 5 años', d: 'Empieza a tener sus propias crías.' }
+                ],
+                vida: 'Vive unos 16 años en libertad y hasta 20 años en cuidado humano.'
+            }
+        };
+
+        function mostrarAve(nombre) {
+            const ave = aves[nombre];
+            const c = ave.color;
+            document.getElementById('datos').innerHTML = ave.datos.map(d => `
+                <div class="rounded-xl p-4 bg-${c}-50 border border-${c}-100">
+                    <div class="text-xs font-semibold uppercase tracking-wide text-${c}-600"><i class="fa-solid ${d.icono} mr-1"></i>${d.titulo}</div>
+                    <div class="font-heading font-bold text-2xl text-${c}-800 mt-1">${d.valor}</div>
+                    <div class="text-xs text-gray-500 mt-1">${d.nota}</div>
+                </div>`).join('');
+            document.getElementById('ciclo').innerHTML = ave.ciclo.map((p, i) => `
+                <li class="ml-6">
+                    <span class="absolute -left-[13px] flex items-center justify-center w-6 h-6 rounded-full bg-${c}-600 text-white text-xs font-bold">${i + 1}</span>
+                    <p class="font-semibold text-sage-900 text-sm">${p.t}</p>
+                    <p class="text-sm text-gray-600">${p.d}</p>
+                </li>`).join('');
+            document.getElementById('vida').innerHTML = `<i class="fa-solid fa-heart-pulse mr-1"></i>${ave.vida}`;
+
+            const bc = document.getElementById('btn-coquito'), be = document.getElementById('btn-escarlata');
+            bc.className = 'px-5 py-2 rounded-full text-sm font-semibold transition-all ' + (nombre === 'coquito' ? 'bg-coquito-800 text-white' : 'bg-white text-coquito-800 border border-coquito-100');
+            be.className = 'px-5 py-2 rounded-full text-sm font-semibold transition-all ' + (nombre === 'escarlata' ? 'bg-escarlata-600 text-white' : 'bg-white text-escarlata-800 border border-escarlata-100');
+        }
+
+        // ---------- Panel 4: cuestionario ----------
+        const quizData = [
+            {
+                question: "¿Por qué el ibis escarlata es de color rojo?",
+                options: [
+                    { text: "Porque nace rojo y se queda así toda la vida.", correct: false, explanation: "No. Los pichones nacen café, gris y blanco. El rojo aparece poco a poco." },
+                    { text: "Porque come cangrejos y camarones que tienen un pigmento rojo.", correct: true, explanation: "¡Así es! Los cangrejos y camarones tienen pigmentos (carotenoides) que pintan sus plumas de rojo." },
+                    { text: "Porque se baña en barro rojo de los ríos.", correct: false, explanation: "No. El color viene de lo que come, no del barro." }
+                ]
+            },
+            {
+                question: "¿Cómo reconoces al coquito (ibis pico amarillo)?",
+                options: [
+                    { text: "Es todo rojo con las puntas de las alas negras.", correct: false, explanation: "Ese es el ibis escarlata." },
+                    { text: "Es blanco con el pico negro y recto.", correct: false, explanation: "No. El coquito no es blanco y su pico es curvo." },
+                    { text: "Es café oscuro con brillos verdes, cara rosada sin plumas y pico claro y curvo.", correct: true, explanation: "¡Correcto! Así se ve el coquito adulto." }
+                ]
+            },
+            {
+                question: "¿Cuánto tiempo tarda un ibis escarlata en ponerse completamente rojo?",
+                options: [
+                    { text: "Más o menos 2 años.", correct: true, explanation: "¡Muy bien! El rojo empieza en la espalda y se extiende por todo el cuerpo en unos 2 años." },
+                    { text: "Una semana después de salir del huevo.", correct: false, explanation: "No. A esa edad todavía es café, gris y blanco." },
+                    { text: "Nunca cambia de color.", correct: false, explanation: "Sí cambia: de joven es café y de adulto es rojo." }
+                ]
+            },
+            {
+                question: "¿Dónde es más fácil ver un coquito en Colombia?",
+                options: [
+                    { text: "Solo en el mar, lejos de la costa.", correct: false, explanation: "No. El coquito vive en agua dulce, no en mar abierto." },
+                    { text: "En humedales, lagunas y potreros, incluso en Bogotá.", correct: true, explanation: "¡Exacto! Es común en los humedales de Bogotá y de muchas otras ciudades." },
+                    { text: "En los desiertos.", correct: false, explanation: "No. Necesita barro y agua para buscar su comida." }
+                ]
+            }
+        ];
+
+        let currentIdx = 0, score = 0, answered = false;
+
+        function renderQuestion() {
+            answered = false;
+            const q = quizData[currentIdx];
+            document.getElementById('question-number').innerText = `Pregunta ${currentIdx + 1} de ${quizData.length}`;
+            document.getElementById('score-counter').innerText = `Puntos: ${score}`;
+            document.getElementById('question-text').innerText = q.question;
+            const container = document.getElementById('options-container');
+            container.innerHTML = '';
+            document.getElementById('explanation-box').classList.add('hidden');
+            document.getElementById('next-btn').classList.add('hidden');
+            q.options.forEach((opt, idx) => {
+                const btn = document.createElement('button');
+                btn.className = "w-full text-left p-3.5 sm:p-4 rounded-xl bg-sage-800 hover:bg-sage-600 border border-sage-700 transition-all text-xs sm:text-sm text-sage-100 font-medium leading-relaxed flex items-start space-x-3";
+                btn.innerHTML = `<span class="px-2 py-0.5 rounded bg-sage-900/60 text-xs font-bold text-sage-200 mt-0.5">${String.fromCharCode(65 + idx)}</span><span class="flex-1">${opt.text}</span>`;
+                btn.onclick = () => handleAnswer(idx, btn);
+                container.appendChild(btn);
+            });
+        }
+
+        function handleAnswer(selectedIdx, btnElement) {
+            if (answered) return;
+            answered = true;
+            const q = quizData[currentIdx];
+            const selectedOpt = q.options[selectedIdx];
+            const buttons = document.getElementById('options-container').children;
+            for (let b of buttons) { b.disabled = true; b.classList.remove('hover:bg-sage-600'); }
+            const expBox = document.getElementById('explanation-box');
+            btnElement.classList.remove('bg-sage-800');
+            if (selectedOpt.correct) {
+                score++;
+                btnElement.classList.add('bg-emerald-700', 'border-emerald-500');
+                expBox.className = "mt-4 p-3.5 rounded-xl text-xs sm:text-sm bg-emerald-950/80 border border-emerald-500/50 text-emerald-100 leading-relaxed";
+                expBox.innerHTML = `<strong><i class="fa-solid fa-circle-check mr-1"></i> Correcto:</strong> ${selectedOpt.explanation}`;
+            } else {
+                btnElement.classList.add('bg-rose-900/80', 'border-rose-500');
+                expBox.className = "mt-4 p-3.5 rounded-xl text-xs sm:text-sm bg-rose-950/80 border border-rose-500/50 text-rose-100 leading-relaxed";
+                expBox.innerHTML = `<strong><i class="fa-solid fa-circle-xmark mr-1"></i> Incorrecto:</strong> ${selectedOpt.explanation}`;
+                q.options.forEach((o, i) => { if (o.correct) { buttons[i].classList.remove('bg-sage-800'); buttons[i].classList.add('bg-emerald-800/80', 'border-emerald-600'); } });
+            }
+            document.getElementById('score-counter').innerText = `Puntos: ${score}`;
+            const btnNext = document.getElementById('next-btn');
+            btnNext.innerHTML = currentIdx === quizData.length - 1 ? 'Ver resultado <i class="fa-solid fa-flag-checkered ml-1"></i>' : 'Siguiente pregunta <i class="fa-solid fa-arrow-right ml-1"></i>';
+            btnNext.classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            currentIdx++;
+            if (currentIdx < quizData.length) renderQuestion(); else showFinalResults();
+        }
+
+        function showFinalResults() {
+            document.getElementById('quiz-body').classList.add('hidden');
+            document.getElementById('quiz-end').classList.remove('hidden');
+            const title = document.getElementById('end-title'), desc = document.getElementById('end-desc');
+            if (score === quizData.length) {
+                title.innerText = "¡Eres un experto en ibis!";
+                desc.innerText = `Obtuviste ${score} de ${quizData.length} puntos. Ya sabes reconocer al coquito y al ibis escarlata.`;
+            } else {
+                title.innerText = `Resultado: ${score}/${quizData.length}`;
+                desc.innerText = "¡Buen intento! Repasa los paneles de arriba y vuelve a intentarlo.";
+            }
+        }
+
+        function resetQuiz() {
+            currentIdx = 0; score = 0;
+            document.getElementById('quiz-end').classList.add('hidden');
+            document.getElementById('quiz-body').classList.remove('hidden');
+            renderQuestion();
+        }
+
+        window.onload = function () { mostrarAve('coquito'); renderQuestion(); };
+    </script>
+</body>
+</html>
